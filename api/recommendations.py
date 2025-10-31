@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from database import get_db
 from models import Song
-from spotify import get_audio_features
+from spotify_client import get_audio_features
 
 router = APIRouter(prefix="/songs", tags=["Songs"])
 
